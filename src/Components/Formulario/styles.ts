@@ -24,4 +24,9 @@ export const Opcoes = styled.div`
 export const Opcao = styled.div`
   display: inline;
   text-transform: capitalize;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 8px;
+  }
 `

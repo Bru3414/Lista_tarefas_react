@@ -11,6 +11,10 @@ export const Card = styled.div<Props>`
   color: ${(props) => (props.ativo ? '#1e90ff' : '#5e5e5e')};
   border-radius: 8px;
   cursor: pointer;
+
+  @media (max-width: 767px) {
+    margin-bottom: 8px;
+  }
 `
 
 export const Contador = styled.span`
