@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "doki.wallpaper.enabled": false,
+    "doki.background.enabled": false
+  }
