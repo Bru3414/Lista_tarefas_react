@@ -51,8 +51,11 @@ const tarefasSlice = createSlice({
       }
     },
     cadastrar: (state, action: PayloadAction<Omit<Tarefa, 'id'>>) => {
-      const tarefaJaExiste = state.itens.find((t) => {
-        t.titulo.toLowerCase() === action.payload.titulo.toLowerCase()
+      const tarefaJaExiste = state.itens.find((tarefa) => {
+        return tarefa.titulo.toLowerCase() ===
+          action.payload.titulo.toLowerCase()
+          ? true
+          : false
       })
 
       const ultimaTarefa = state.itens[state.itens.length - 1]
